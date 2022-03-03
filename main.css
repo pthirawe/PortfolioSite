@@ -1,0 +1,247 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    background-color: #ECF4F3;
+}
+h1{
+    font-size: 5em;
+}
+h2{
+    font-size: 3em;
+    border-bottom: 0.1em solid #006A71;
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+}
+.content-wrapper {
+    min-height: 100vh;
+}
+.container-fluid {
+    height: 100vh;
+    padding: 0;
+}
+
+.content-body {
+    box-shadow: -1em 0 1em 0.1em darkslategrey, 1em 0 1em 0.1em darkslategrey;
+    min-height: 100vh;
+    background-color: #ECF4F3;
+    padding: 0;
+}
+
+.logo {
+    color: #27187E;
+    font-size: 200px;
+}
+
+.namepanel {
+    color: #006A71;
+    margin-left: 3em;
+    margin-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.bg-green {
+    background-color: #68B0AB;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1em;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1em;
+}
+.col{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidepanel{
+    background-color:#006A71;
+    margin-right: 0;
+}
+
+.padtop{
+    padding-top: 25vh;
+}
+.img {
+    background-image: url(./Assets/pexels-dominika-roseclay-optimized.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #006A71;
+    opacity: 0.4;
+}
+.my-nav-style {
+    box-shadow: 0 0 0.5em 0.2em black;
+    background-color: #27187E;
+    color: #ECF4F3;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-item {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+.nav-item:hover {
+    background-color: #006A71
+}
+
+.nav-link:hover {
+    color: #68B0AB;
+    transition: .5s ease-out;
+}
+
+@keyframes menu-line {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.active {
+    border-bottom: 0.5em solid #006A71;
+    color: #68B0AB;
+    animation-name: menu-line;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.circlepic {
+    background-image: url(./Assets/PlaceholderHead.jpg);
+    background-size: cover;
+    position: relative;
+    width: 25vh !important;
+    min-width: 10em;
+    max-width: 15em;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 0.2em #ECF4F3 solid;
+    clear: both;
+}
+
+.nameplate {
+    clear:both;
+    min-width: 10.5em;
+    border-top: 2px solid white;
+}
+
+#about-panel {
+    /*
+    clip-path: polygon(0% 80%, 100% 100%, 100% 10%, 0% 0%);
+    */
+    padding-top: 5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#portfolio-panel {
+    clip-path: polygon(0% calc(100% - 8vw), 100% 100%, 100% 0, 0% 5em);
+    padding-top: 5em;
+    padding-bottom: 10em;
+}
+
+.btn {
+    color: #006A71;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #006A71;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #27187E;
+}
+  
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+  
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+/* Card Stuff */
+.card {
+    margin: 2em 1em 2em 1em;
+    width: 30em;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+
+/* Social Media Icon*/
+
+.social-icon {
+    height: 5em;
+    width: 5em;
+}
+
+.foot {
+    background-color: #0C1D1B;
+    height: 25px;
+    font-size: 1.0em;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+.foot ul#footerMenu{
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.5em 0 0;
+    margin: 0;
+}
+footer ul li.notFirst::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+#contact a{
+    color: #006A71;
+    font-size: 2em
+}
+
+#contact h6{
+    color: #006A71;
+    font-size: 2em;
+    visibility: hidden;
+}
+#contact a, footer a:visited {
+    color: #006A71;
+    text-decoration: none;
+}
+#contact a:hover {
+    color: #006A71;
+    text-decoration: none;
+}
+
